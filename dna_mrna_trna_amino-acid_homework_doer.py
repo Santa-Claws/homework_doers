@@ -50,7 +50,7 @@ def amino_acid_converter(trna_list):
     return amino_acid
 
 
-print('this is a dna and mrna and trna converter for tristans use')
+print('this is a dna and mrna and trna converter for gits use')
 n_input = input('what do you want to convert')
 
 if n_input == 'mrna':
