@@ -2,6 +2,7 @@ def calculator(quoordinates: list, scale_factor):
     ending_quordinates_list = []
     for i in quoordinates:
         ending_quordinates_list.append(i * scale_factor)
+        print(ending_quordinates_list)
     return ending_quordinates_list
 
 
@@ -12,7 +13,8 @@ for i in range(int(number_of_times)):
     x_quordinatents_input = input(f'what is the x the quordinate to number {i}\n')
     y_quordinatents_input = input(f'what is the y the quordinate to number {i}\n')
     all_quordinates.append(int(x_quordinatents_input))
-    all_quordinates.append(int(x_quordinatents_input))
+    all_quordinates.append(int(y_quordinatents_input))
     all_quordinates.append('|')
+    print(all_quordinates)
 final_quordinates = calculator(all_quordinates, int(scale_factor_input))
 print(final_quordinates)
