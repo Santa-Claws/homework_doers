@@ -10,9 +10,7 @@ def calculator(x_axis_movenment, y_axis_movenment, quordinates: tuple[int, int])
 def calculator_supplies_and_run(movenment):
     x_quordinatents_input = input('what is the x the quordinate\n')
     y_quordinatents_input = input('what is the y the quordinate\n')
-    x_quordinatents_int = int(x_quordinatents_input)
-    y_quordinatents_int = int(y_quordinatents_input)
-    both_quordinates = (x_quordinatents_int, y_quordinatents_int)
+    both_quordinates = (int(x_quordinatents_input), int(y_quordinatents_input))
     if not movenment:
         x_axis_input = input('whats the x axis movement (use an integer)\n')
         y_axis_input = input('whats the y axis movement (use an integer)\n')
