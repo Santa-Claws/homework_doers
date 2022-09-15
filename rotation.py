@@ -8,13 +8,13 @@ def counterclock_90_rotation(quordinates: Tuple[int, int]):
     new_quordinates = (y_quor, x_quor)
     return new_quordinates
 
-def clock_90_rotation(quordinates):
+def clock_90_rotation(quordinates: Tuple[int, int]):
     x_quor, y_quor = quordinates
     x_quor = x_quor - (x_quor * 2)
     new_quordinates = (y_quor, x_quor)
     return new_quordinates
 
-def rotation_180(quordinates):
+def rotation_180(quordinates: Tuple[int, int]):
     x_quor, y_quor = quordinates
     y_quor = y_quor - (y_quor * 2)
     x_quor = x_quor - (x_quor *2)
