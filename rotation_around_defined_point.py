@@ -1,6 +1,9 @@
 from typing import Tuple
 
 
+#still working out the errors
+#if you have this homework then just use the rotation.py and do the quordinate converting manuely
+
 # (-y, x)
 def counterclock_90_rotation_custom_point(quordinates: Tuple[int, int], rotation_point: Tuple[int, int]):
     x_quor, y_quor = quordinates
