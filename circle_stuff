@@ -1,0 +1,54 @@
+import math
+def find():
+    dr_list = []
+    diameter_input = input('whats diameter')
+    radius_input = input('whats radius')
+    circumference_input = input('whats the circumference')
+    area_input = input('whats the area')
+    dr_list.append(diameter_input)
+    dr_list.append(radius_input)
+    dr_list.append(circumference_input)
+    dr_list.append(area_input)
+    return dr_list
+    
+def circumference(dr_list):
+    if dr_list[0]:
+        d = float(dr_list[0])
+        c = 2 * (d/2) * 3.14
+    if dr_list[1]:
+        r = float(dr_list[1]) 
+        c = 2 * r * 3.14
+    if dr_list[2]:
+        c = float(dr_list[2]) 
+        r = (c/2)/3.14
+        d = r * 2
+        print(f'diameter is {d}')
+        print(f'radius is {r}')
+
+    print(c)
+    
+def area(dr_list):
+    if dr_list[0]:
+        d = float(dr_list[0])
+        r = d/2
+        a =  3.14 * (r * r)
+    if dr_list[1]:
+        r = float(dr_list[1]) 
+        a = 3.14 * (r * r) 
+    if dr_list[3]:
+        a = float(dr_list[3]) 
+        r = math.sqrt(a/3.14)
+        d = r * 2
+        print(f'diameter is {d}')
+        print(f'radius is {r}')
+
+    print(a)
+    
+    
+    
+# pie x r^2
+dr_list = find()
+area(dr_list)
+    
+        
+            
