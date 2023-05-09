@@ -45,6 +45,11 @@ def area(dr_list):
     print(a)
     
     
+def sphere_vol(dr_list):
+    r = dr_list[1]
+    v = ((4 * 3.14) * (r * r * r))/3
+    return v
+    
     
 # pie x r^2
 dr_list = find()
